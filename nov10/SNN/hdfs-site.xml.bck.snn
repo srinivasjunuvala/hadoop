@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>
+	<name>dfs.name.dir</name>
+	<value>/data/namenode</value>
+	<final>true</final>
+</property>
+
+<property>
+  <name>fs.checkpoint.period</name>
+  <value>36</value>
+  <description>The number of seconds between two periodic checkpoints.
+  </description>
+</property>
+
+<property>
+  <name>dfs.namenode.backup.address</name>
+  <value>0.0.0.0:50100</value>
+  <description>
+    The backup node server address and port.
+    If the port is 0 then the server will start on a free port.
+  </description>
+</property>
+ 
+ <property>
+  <name>dfs.namenode.backup.http-address</name>
+  <value>0.0.0.0:50105</value>
+  <description>
+    The backup node http server address and port.
+    If the port is 0 then the server will start on a free port.
+  </description>
+</property>
+
+</configuration>
