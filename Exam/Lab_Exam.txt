@@ -1,0 +1,18 @@
+Question 1: Please setup a Hadoop1.0, Single Node or 2 node Cluster depening upon the resources you have.
+
+-> Please make sure the following conditions are met:
+
+1) All daemons like namenode, datanode, jobtracker, tasktracker must run in the cluster( Single node or multinode).
+2) Default Block size must be 128 MB.
+3) Write the cluster NamespaceID of your cluster (______________).
+4) Create a directory /projects on the hadoop cluster and let the following conditions:
+	-> set Namespace quota of 10 on the directory.
+	-> set Space Quota of 100MB on the directory.
+5) use distcp command to copy /projects to /new on the same cluster.
+6) Create a list of DataNodes participating in the cluster and save the list in file "list_of_datanodes" on your local machine.
+
+Questions 2:
+
+1) Save the namespace of the Namenode, without using secodary namenode. fsimage and edits file must merger, without stopping the namenode daemon.
+2) Set include file, so that no other nodes can talk to the namenode, other then the what are in the include file.
+3) Set cluster Re-balancer threshold to 40%.
